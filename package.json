@@ -1,0 +1,11 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "a collection of design ideas",
+  "main": "index.html",
+  "author": "Jan Geselle",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0"
+  }
+}

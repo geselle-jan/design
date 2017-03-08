@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Battle.net boxes
+   ========================================================================== */
+#battle_net_boxes {
+  padding-top: 15em;
+  background: #1f739e;
+}
+#battle_net_boxes a.back {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+#battle_net_boxes > .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#battle_net_boxes > .background:before {
+  content: '';
+  display: block;
+  background: radial-gradient(ellipse at center, #3d728f 0%, #385d70 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#battle_net_boxes > .background:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../img/noise.png);
+  opacity: 0.33;
+}
+#battle_net_boxes .thumbnail {
+  display: block;
+  position: relative;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  text-decoration: none;
+  background: rgba(39, 56, 76, 0.9);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+#battle_net_boxes .thumbnail:before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.8), inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+#battle_net_boxes .thumbnail .caption {
+  padding: 8px 18px;
+}
+#battle_net_boxes .thumbnail .caption h3 {
+  color: #fff;
+  margin: 8px 0 10px 0;
+  font-weight: 400;
+  font-size: 1.125em;
+  letter-spacing: 1px;
+}
+#battle_net_boxes .thumbnail .caption p {
+  color: #fff;
+  font-weight: 300;
+  font-size: .9em;
+  letter-spacing: .75px;
+}
+#battle_net_boxes a.thumbnail:after {
+  content: '';
+  pointer-events: none;
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  transition: background-color 0.2s;
+}
+#battle_net_boxes a.thumbnail:hover:after {
+  background-color: rgba(255, 255, 255, 0.05);
+}
